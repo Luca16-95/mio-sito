@@ -15,15 +15,6 @@ Questo progetto rappresenta una **prima versione del mio portfolio online**, svi
 
 ---
 
-## 📁 Struttura dei file
-
-mio-sito/sitoPersonale
-├── index.html # Pagina principale
-├── style.css # Stili personalizzati
-└── immagini/ # Eventuali immagini o risorse
-
----
-
 ## 🖥️ Come visualizzarlo localmente
 
 1. Clona il repository:
