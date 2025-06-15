@@ -53,21 +53,21 @@ setInterval(typeLetter, 100);
  * di permettere al click di scaricre il mio cv
  */
 
-// Assicurati che questo codice venga eseguito quando il DOM è completamente caricato
+
 window.onload = () => {
   // Trova il bottone tramite il suo ID
   const downloadButton = document.getElementById(
     "download-btn"
   ) as HTMLButtonElement;
 
-  // Aggiungi un event listener per il click
+  // Aggiunge un event listener per il click
   downloadButton.addEventListener("click", () => {
     // Crea un elemento <a> dinamicamente
     const link = document.createElement("a");
 
-    // Imposta l'URL del file (modifica questo percorso con quello effettivo del tuo CV)
-    link.href = "./assets/CV - Manzo -1.pdf"; // Cambia con il percorso del tuo file PDF
-    link.download = "CV_LucaManzo.pdf"; // Il nome con cui il file verrà scaricato
+    // Imposta l'URL del file 
+    link.href = "./assets/CV - Manzo -1.pdf";
+    link.download = "CV_LucaManzo.pdf";
 
     // Simula il click del link per avviare il download
     link.click();
