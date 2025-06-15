@@ -16,7 +16,7 @@ function typeLetter() {
     if (!isDeleting) {
         // Scrittura della frase lettera per lettera
         if (letterIndex < currentPhrase.length) {
-            element.textContent += currentPhrase[letterIndex]; // Aggiungi la lettera
+            element.textContent += currentPhrase[letterIndex]; // Aggiunge la lettera
             letterIndex++; // Passa alla lettera successiva
         }
         else {
@@ -51,18 +51,16 @@ setInterval(typeLetter, 100);
  * nella prossima sezione si occuperà (il bottone)
  * di permettere al click di scaricre il mio cv
  */
-// Assicurati che questo codice venga eseguito quando il DOM è completamente caricato
+
 window.onload = function () {
     // Trova il bottone tramite il suo ID
     var downloadButton = document.getElementById("download-btn");
-    // Aggiungi un event listener per il click
     downloadButton.addEventListener("click", function () {
         // Crea un elemento <a> dinamicamente
         var link = document.createElement("a");
-        // Imposta l'URL del file (modifica questo percorso con quello effettivo del tuo CV)
-        link.href = "./assets/CV - Manzo -1.pdf"; // Cambia con il percorso del tuo file PDF
-        link.download = "CV_LucaManzo.pdf"; // Il nome con cui il file verrà scaricato
-        // Simula il click del link per avviare il download
+        // Imposta l'URL del file 
+        link.href = "./assets/CV - Manzo -1.pdf"; 
+        link.download = "CV_LucaManzo.pdf"; 
         link.click();
     });
 };
